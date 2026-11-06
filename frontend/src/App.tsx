@@ -2,7 +2,7 @@ export default function App() {
   return (
     <div className="App">
       <h1 className="text-3xl font-bold underline">
-        Hello world!
+        Project is continuing......
       </h1>
     </div>
   )
