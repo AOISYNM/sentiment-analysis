@@ -1,3 +1,5 @@
+import Hero from "./assets/components/Hero";
+
 export default function App() {
   return (
     <div className="App">
@@ -5,6 +7,7 @@ export default function App() {
         Project is continuing......
         updatesare incoming soon
         making the backend 
+        <Hero/>
       </h1>
     </div>
   )
