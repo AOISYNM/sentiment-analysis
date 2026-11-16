@@ -52,7 +52,7 @@ This project takes raw text as input, cleans and prepares it using standard NLP 
 | Area | Tools |
 | --- | --- |
 | Language | Python |
-| NLP | NLTK |
+| NLP | GRU(RNN) |
 | Machine learning | Scikit-learn |
 | Data handling | Pandas, NumPy |
 | Web framework | Flask |
