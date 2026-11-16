@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: emotion-api
+    runtime: python
+    plan: free            # 512 MB RAM. If it crashes with out-of-memory, move to "1c-2g" (2 GB)
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9     # use a version your TensorFlow release supports
+      - key: ALLOWED_ORIGINS
+        value: https://your-frontend.onrender.com   # replace with your real frontend URL(s), comma-separated

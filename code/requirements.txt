@@ -1,0 +1,9 @@
+# IMPORTANT: pin tensorflow/keras/numpy to the SAME versions you trained and
+# saved the model/tokenizer with. Run `pip freeze | grep -i -E "tensorflow|keras|numpy"`
+# locally and copy the exact versions here (e.g. tensorflow-cpu==2.xx.x).
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+tensorflow-cpu   # CPU-only build: much smaller and lighter on RAM than `tensorflow`
+    
